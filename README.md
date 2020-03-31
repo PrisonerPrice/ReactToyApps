@@ -22,4 +22,8 @@ Follow React's official tutorial to build this tic-tac-toe chess. Reference: htt
 
 A simple guessing number game. Reference: https://github.com/BradleyCulley/guess-the-number
 
+### lunch-calculator
+
+As we could not go out because of the coronavirus, we use UberEats everyday, so I wrote this little calculator to calculate everyone's spending on lunch.
+
 
