@@ -52,7 +52,7 @@ class Input extends React.Component {
 			total = parseFloat(total) + parseFloat(this.state.ChenMoney);
 		}
 		if(this.state.ZhuMoney != null) {
-			total = parseFloat(total) + parseFloat(this.state.ZhangMoney);
+			total = parseFloat(total) + parseFloat(this.state.ZhuMoney);
 		}
 		if(this.state.ZhangMoney != null) {
 			total = parseFloat(total) + parseFloat(this.state.ZhangMoney);

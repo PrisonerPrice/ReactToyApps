@@ -1,6 +1,6 @@
 # ReactToyApps
 
-This is a collection of toy apps I try to build and get familiar with some specific area of development React applications.
+This is a collection of toy apps I build to get familiar with some specific areas of develop React applications.
 
 ## Get started
 
@@ -10,7 +10,7 @@ This is a collection of toy apps I try to build and get familiar with some speci
 
 ## Host one-page application on AWS S3
 
-I have found an easy tutorial of how to host your React application on AWS S3. Here is the link: https://medium.com/@abventures/how-to-build-a-react-website-in-aws-within-15-minutes-9e9c37f85aeb
+I found an easy tutorial of how to host your React application on AWS S3. Here is the link: https://medium.com/@abventures/how-to-build-a-react-website-in-aws-within-15-minutes-9e9c37f85aeb
 
 ## Apps Category
 
