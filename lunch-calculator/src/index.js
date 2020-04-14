@@ -71,26 +71,39 @@ class Input extends React.Component {
 		var ZhuRatio = 0;
 		var ZhangRatio = 0;
 		var shareIndividual = 0;
-		if(this.state.BianMoney != null) {
+		var divider = 0;
+		if(this.state.BianMoney != 0) {
 			total = parseFloat(total) + parseFloat(this.state.BianMoney);
+			divider++;
 		}
-		if(this.state.ChenMoney != null) {
+		if(this.state.ChenMoney != 0) {
 			total = parseFloat(total) + parseFloat(this.state.ChenMoney);
+			divider++;
 		}
-		if(this.state.ZhuMoney != null) {
+		if(this.state.ZhuMoney != 0) {
 			total = parseFloat(total) + parseFloat(this.state.ZhuMoney);
+			divider++;
 		}
-		if(this.state.ZhangMoney != null) {
+		if(this.state.ZhangMoney != 0) {
 			total = parseFloat(total) + parseFloat(this.state.ZhangMoney);
+			divider++;
 		}
-		if(this.state.shareItem != null) {
+		if(this.state.shareItem != 0 && divider != 0) {
 			total = parseFloat(total) + parseFloat(this.state.shareItem);
-			shareIndividual = parseFloat(this.state.shareItem) / 4;
+			shareIndividual = parseFloat(this.state.shareItem) / divider;
 		}
-		BianRatio = (parseFloat(this.state.BianMoney) + parseFloat(shareIndividual)) / total;
-		ChenRatio = (parseFloat(this.state.ChenMoney) + parseFloat(shareIndividual)) / total;
-		ZhuRatio = (parseFloat(this.state.ZhuMoney) + parseFloat(shareIndividual)) / total;
-		ZhangRatio = (parseFloat(this.state.ZhangMoney) + parseFloat(shareIndividual)) / total;
+		if(this.state.BianMoney != 0) {
+			BianRatio = (parseFloat(this.state.BianMoney) + parseFloat(shareIndividual)) / total;
+		}
+		if(this.state.ChenMoney != 0) {
+			ChenRatio = (parseFloat(this.state.ChenMoney) + parseFloat(shareIndividual)) / total;
+		}
+		if(this.state.ZhuMoney != 0) {
+			ZhuRatio = (parseFloat(this.state.ZhuMoney) + parseFloat(shareIndividual)) / total;
+		}
+		if(this.state.ZhangMoney != 0) {
+			ZhangRatio = (parseFloat(this.state.ZhangMoney) + parseFloat(shareIndividual)) / total;
+		}
 		this.setState({
 			BianPay: (BianRatio * this.state.sum).toPrecision(4),
 			ChenPay: (ChenRatio * this.state.sum).toPrecision(4),
